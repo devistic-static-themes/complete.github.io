@@ -1,0 +1,34 @@
+//
+// home.scss
+//
+
+@mixin home-common {
+    background-size: cover;
+    align-self: center;
+    position: relative;
+    background-position: center center;
+}
+
+
+.bg-home {
+    height: 100vh;    
+    @include home-common();
+
+    @media (max-width: 767px) {
+        .bg-home {        
+            padding: 150px 0;
+            height: auto;
+        }
+    }
+}
+
+.bg-half-150 {
+    padding: 150px 0;
+    @include home-common();    
+}
+
+@media print {
+    .page-wrapper .page-content .layout-specing {
+        padding: 0 !important;
+    }
+};

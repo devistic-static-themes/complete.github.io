@@ -1,0 +1,135 @@
+.wo-innerbannertwo-wrap.bg-color2 {
+    background: #acddde
+}
+
+.wo-contactbanner {
+    margin: 0 0 55px;
+    & figure {
+        border-radius: $radius;
+        background: $theme-color;
+        position: relative;
+        margin-bottom: 0;
+        img {
+            width: 100%;
+            opacity: 0.3;
+            border-radius: $radius;
+        }
+        &:after {
+            position: absolute;
+            left: 0;
+            content: '';
+            top: 0;
+            width: 540px;
+            height: 451px;
+            z-index: -1px;
+            background: url(../images/inner-banner/shape.png);
+        }
+    }
+}
+
+.wo-contactcontent {
+    left: 0;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    @extend %flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__title {
+        padding: 0 20%;
+        & h2 {
+            color: #fff;
+            font-style: italic;
+            margin: 0 0 12px;
+            line-height: em(46, 36);
+            & span {
+                display: block;
+            }
+            & em {
+                color: $primary-color;
+            }
+        }
+        & p {
+            color: #fff;
+            font-size: rem(16px);
+            line-height: em(26, 16);
+            margin-bottom: 0;
+        }
+    }
+}
+
+.wo-contactformwrap {
+    @extend %flex;
+    flex-direction: column;
+    & .wo-replywrap {
+        padding-top: 0;
+        border: 0;
+        & .wo-replytitle {
+            margin: 0 0 15px;
+        }
+    }
+}
+
+.wo-ouravailability {
+    &__title {
+        margin: 0 0 15px;
+        h3 {
+            font-size: rem(20px);
+        }
+    }
+    &__info {
+        border-top: 1px solid $border-color;
+        li {
+            @extend %flex;
+            padding: 24px 30px;
+            flex-wrap: unset;
+            align-items: center;
+            list-style: none;
+            line-height: inherit;
+            &+li {
+                border-top: 1px solid $border-color;
+            }
+        }
+    }
+}
+
+.wo-contactimg {
+    margin: 0 20px 0 0;
+    min-width: 40px;
+}
+
+.wo-contactinfo {
+    & span {
+        display: block;
+        margin: 0 0 3px;
+        color: $theme-color;
+        font-size: rem(14px);
+        line-height: em(16, 14);
+    }
+    & h4 {
+        font-size: rem(16px);
+        line-height: em(22, 16);
+        margin-bottom: 0;
+        & a {
+            color: $theme-color;
+            display: block;
+            &[href*="mailto:"] {
+                color: #55acee;
+            }
+        }
+    }
+    address {
+        color: $theme-color;
+        font-size: rem(16px);
+        line-height: em(22, 16);
+        margin-bottom: 0;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-style: normal;
+        font-family:  $heading-font-family;
+    }
+}

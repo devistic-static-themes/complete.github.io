@@ -1,0 +1,286 @@
+@charset "UTF -8";
+/* CSS Document 
+Author Name:themeperch
+Author URI:http://themeforest.net/user/themeperch?ref=themeperch
+Creation Date:3rd April, 2017
+Description:A rESPONSIVE stylesheet for RealityPro Template Developed By themeperch.
+
+------------ MEDIA WIDTH ------------- 
+	max-width: 800px
+	max-width: 640px
+	max-width: 480px
+	max-width: 360px
+*/
+
+
+@media (max-width:800px) {
+	.topbar-info{
+		display: block;
+	}
+	.topbar{
+		display: none;
+		border-top: 1px solid rgba(255,255,255,.1);
+	}
+	.topbar-inner ul{
+		text-align: center;
+		padding: 5px 0;
+	}	
+	.login-register-country ul li:last-child{
+		display: none;
+	}
+	.hotline,
+	.login-register-country{
+		text-align: center;
+	}
+	.advance-search-btn.btn{
+		display: inline-block;
+	}
+	.advance-search-style3{
+		right: 60px;
+	}
+	.property-location .pull-right{
+		float: none !important;
+	}
+	.about-slider,
+	.footer-top .widget,
+	.progress-item{
+		margin-bottom: 30px;
+	}
+	.item-left{
+		padding-right: 0;
+		padding-left: 50px;
+		text-align: left;
+		border-left: 1px solid;
+		border-right: none;
+		margin-right: 0;
+		margin-left: 15px;
+	}
+	.property-slider-wrap .property-catagorie{
+		bottom: 57px;
+	}
+	.property-search .btn{
+		font-size: 14px;
+	}
+	.item-right{
+		padding-left: 50px;
+	}
+	.item-left .icon::after,
+	.item-right .icon::after{
+		left: -50px;
+	}
+	.item-left::before{
+		left: -6px;
+	}
+	.single-agent .padding-left-zero{
+		padding-left: 15px;
+	}
+	.single-agent .padding-right-zero{
+		padding-right: 15px;
+	}
+	.agent-image-holder::after{
+		opacity: 0;
+	}
+	.agent-single-page .agent-details{
+		padding: 15px 15px 14px 30px;
+	}
+	.process-chart-inner{
+		left: 0;
+	}
+	.list-style .property-details{
+		padding-top: 20;
+		padding-bottom: 11px;
+	}
+	.single-feature-item,
+	.single-agent-details,
+	.account-sidebar,
+	.post-single-comment-form{
+		margin-bottom: 50px;
+	}
+	.btn_group .btn-xs{
+		margin-bottom: 10px;
+	}
+	.user-title{
+		margin-right: 0;
+		padding-left: 0;
+	}
+	.user-info-social-link::after,
+	.user-title::after,
+	.user-title::before{
+		display: none;
+	}
+
+}
+
+@media (max-width:640px) {
+	.topbar-style2{
+		display: block;
+	}
+	.property-location .pull-right{
+		float: right !important;
+	}
+	.hero-title{
+		font-size: 32px;
+	}
+	.header-slider{
+		min-height: 650px;
+	}
+	.property-search{
+		padding-bottom: 50px;
+	}
+	.advance-search-style3{
+		min-width: 300px;
+	}
+	.advance-search-style3{
+		right: 35px;
+	}
+	.process-chart-inner{
+		border:none;
+	}
+	.purchase .pull-right {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.purchase-now .btn {
+		margin: 0 0 60px;
+	}
+	.copyright p{
+		text-align: center;
+	}
+	.copyright-menu {
+		margin-top: 10px;
+		text-align: center;
+	}
+	.process-chart-inner::after{
+		display: none;
+	}
+	.list-style .property-details{
+		padding-top: 20px;
+	}
+	.grid-style > li{
+		max-width: 100%;
+	}
+	.list-style .property-details,
+	.list-style .property-image-holder {
+	  	width: 100%;
+	}
+	.property-search .btn{
+		font-size: 16px;
+	}
+	.property-search .btn,
+	.search-fields-wrap{
+		border-radius: 0;
+	}
+	.search-fields-wrap > div {
+		border-bottom: 1px solid #dddddd;
+		border-right: 0 none;
+		display: block;
+		padding-bottom: 15px;
+		padding-top: 15px;
+		width: 100%;
+	}
+	.search-fields-wrap {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+	.comment-list .children{
+		padding-left: 0;
+	}
+	.property-single-tab-content .comment-info .author-desc{
+		padding-left: 0;
+	}
+	.author-desc,
+	.comment-info .author-desc {
+		clear: both;
+		display: block;
+		margin-left: 0;
+		width: 100%;
+	}
+    .agency-image-holder,
+	.author-info-image{
+		margin-bottom: 30px;
+	}
+	.single-agent-details .padding-right-zero{
+		padding-right: 15px;
+	}
+	.ug-textpanel-title{
+		font-size: 28px;
+		line-height: 34px;
+	}
+	.user-info-social-link{
+		padding-left: 0;
+	}
+	.account-heading .btn_group.pull-right{
+		float: left !important;
+	}
+	.dataTables_length{
+		position: relative;
+	}
+	.table-responsive > .table > tbody > tr > td{
+		white-space: inherit;
+	}
+	.content-title{
+		display: block;
+	}
+	.property-title-image{
+		display: none;
+	}
+	.advance-search-form{
+		margin: 30px 0 0;
+	}
+
+
+
+}
+
+
+@media (max-width:480px) {
+
+	.advance-search-form h2{
+		font-size: 22px;
+		line-height: 26px;
+	}
+	.partner-designation{
+		width: 100%;
+	}
+	.agent-content div .pull-right{
+		float: left !important;
+		width: 100%;
+	}
+	.agent-content > p{
+		margin-top: 10px;
+	}
+	.thumbs li{
+		width: 70px;
+	}
+	.thumbs{
+		padding: 10px 0 0;
+	}
+	.post-meta li:last-child{
+		padding-left: 0;
+	}
+	.feature-icon{
+		margin-bottom: 30px;
+	}
+	.error-page h2{
+		font-size: 50px;
+	}
+	.error-search{
+		text-align: center;
+	}
+	.error-search input[type="text"]{
+		float: none;
+	}
+
+
+}
+@media (max-width:360px) {
+	.checkbox{
+		font-size: 14px;
+	}
+	.property-menu li a,
+	.btn_group .btn{
+		margin-bottom: 10px;
+	}
+
+}

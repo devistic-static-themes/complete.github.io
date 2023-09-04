@@ -1,0 +1,41 @@
+.wo-btn{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font: 600 14px $heading-font-family;
+    color: $theme-color;
+    border-radius: $radius;
+    line-height: 50px;
+    padding: 0 10px;
+    min-width: 150px;
+    background-color: $primary-color;
+    z-index: 1;
+    border:0;
+    @extend %transition;
+    &:hover,
+    &:focus{
+        outline: none;
+        color: $theme-color;
+    }
+    a{color: #fff;}
+}
+.wo-btn-small{
+    @extend %flex;
+    justify-content: center;
+    @extend %border;
+    min-width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: $radius;
+}
+.wo-btn-active{
+    background-color: $secondary-color;
+    color: #fff;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(88,70,140,0.3);
+    box-shadow: 0 10px 30px 0 rgba(88,70,140,0.3);
+    &:before{
+        width: 100%;
+        visibility: visible;
+    }
+}

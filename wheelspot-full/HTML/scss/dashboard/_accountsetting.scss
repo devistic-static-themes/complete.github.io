@@ -1,0 +1,61 @@
+.animated_checkbox {
+    @extend %flex;
+    align-items: center;
+    margin: 30px 0 0 0;
+    input[type=checkbox],
+    input[type=radio] {
+        display: none;
+    }
+    label {
+        margin: 0;
+        cursor: pointer;
+        span {
+            margin: 0 0 0 7px;
+            font-size: rem(14px);
+            color: $body-color;
+        }
+        i {
+            display: inline-block;
+            width: 35px;
+            height: 22px;
+            border-radius: 20px;
+            vertical-align: middle;
+            position: relative;
+            border: 1px solid #ddd;
+            @extend %transition;
+            &:after {
+                content: '';
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                width: 22px;
+                height: 22px;
+                background: $white-bg;
+                border-radius: 50px;
+                @extend %transition;
+                -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+                border: 1px solid #d8d8d8;
+            }
+        }
+        // Checked-state
+        input:checked+i {
+            background: $chkbox-bg;
+            border-color: $chkbox-bg;
+        }
+        input:checked+i:after {
+            left: calc(100% - 1px);
+            transform: translateX(-100%);
+            border: 1px solid $chkbox-bg;
+            margin-left: 1px;
+        }
+    }
+}
+.wo-passwordform{
+    display: flex;
+    margin: -9px -5px -5px;
+    .wo-profileform{
+        width: 33.33%;
+        padding: 5px;
+    }
+}

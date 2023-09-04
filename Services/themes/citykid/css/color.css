@@ -1,0 +1,28 @@
+/*Primary color #....*/
+.blog-link-listing li a:hover,
+.blog-link-listing li a:focus,
+.list-style-caret li:after,
+.list-style-caret li a:hover,
+.list-style-caret li a:focus,
+.copyright li a:hover,
+.copyright li a:focus,
+a:focus,
+a:hover,
+.color-text,
+.star-rating span{
+	color: #ff4f5c;
+}
+.widget-info ul li .star-rating span,
+.widget-info ul li .color-text{
+	color: #ff4f5c !important;
+}
+.qutoe-author:after,
+.cssmenu ul ul li a:hover,
+.header-nav .menu > li > a:hover,
+.color-bg{
+	background-color: #ff4f5c;
+}
+.input-group .btn.btn-primary
+{
+	border-color: #ff4f5c;
+}

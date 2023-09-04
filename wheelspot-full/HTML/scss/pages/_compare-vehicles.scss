@@ -1,0 +1,281 @@
+.wo-compare-banner{
+	background: #ffe7c7;
+	margin: 0 0 66px;
+	.wo-innerbannertwo-img{margin-bottom: -60px;}
+	& .wo-innerbannertwo__description{
+		margin: 0;
+	}
+}
+.wo-comparesearchbar{
+    z-index: 2;
+	padding:30px; 
+	background:#fff;
+	margin: 0 0 -96px;
+	border-radius: $radius;
+	position: relative;
+	@extend %themeboxshadow;
+	& fieldset{margin: 0;}
+	.wo-group-wrap{
+		@extend %flex;
+		& .form-group{
+			flex-direction: column;
+			flex: auto;
+			align-items: flex-start;
+			width: auto;
+			padding:0;
+			& .form-control{
+				border-left:0;
+				border-radius:0;
+				border-color:$border-color;
+			}
+			&:first-child{
+				& .form-control{
+					border-left:1px solid $border-color;
+					border-radius:$radius 0 0 $radius;
+				}
+			}
+			&.wo-form-btn{
+				flex: none;
+				margin-left: 10px;
+				.wo-btn{margin-top: auto; }
+			}
+			& .wo-titleinput{
+				flex: none;
+				padding: 0 0 8px;
+				color:$theme-color;
+				line-height: em(14px,14px);
+			}
+		}
+	}
+}
+.wo-comparesearchbar .form-group:not(:nth-last-child(2)) .select2-selection--single{
+	border-right: 0;
+	border-radius: 0;
+}
+.wo-comparesearchbar .form-group:first-child .select2-selection--single{border-radius: $radius 0 0 $radius;}
+.wo-comparesearchbar .form-group:nth-last-child(2) .select2-selection--single{border-radius: 0 $radius $radius 0;}
+.wo-vehiclescomwrap{
+	width: 100%;
+	@extend %flex;
+	margin: -15px 0;
+	& > div{margin: 15px 0;}
+}
+.wo-vcomtitle{
+	padding: 0 40px;
+	margin-top: 14px; 
+	text-align: center;
+	& h2{
+		font-size: rem(22px);
+		line-height: em(30px,22px);
+		margin-bottom: 0;
+	}
+	& span{
+		display: block;
+		margin-top: 10px; 
+		color: $form-color;
+	}
+}
+.wo-vehiclescom{
+	@extend %flex;
+	&:hover{
+		& .wo-vehiclescom__img{
+			img{
+				opacity: 0.5;
+			}
+			.wo-removebtn{
+				margin: 0;
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		& > .wo-btn{
+			background:$primary-color;
+		}
+	}
+	&__img{
+		position:relative;
+		border-radius:$radius;
+		width: 100%;
+		background:$theme-color;
+		margin-bottom: 0;
+		& img{
+			width: 100%;
+			display: block;
+			@extend %transition;
+			border-radius:$radius;
+		}
+		& figcaption{
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			@extend %flex;
+			position:absolute;
+			align-items:center;
+			justify-content: center;
+		}
+	}
+	.wo-vehicles{
+		padding:17px 0 23px;
+	}
+	& > .wo-btn{
+		width: 100%;
+		line-height: 44px;
+		background:#f7f7f7;
+	}
+}
+.wo-removebtn{
+	color: #fff;
+	opacity: 0;
+	padding:0 10px;
+	min-width: 90px;
+	border-radius:17px;
+	@extend %transition;
+	visibility: hidden;
+	margin-top: 50px; 
+	background:#e74c3c;
+	border:2px solid #fff;
+	text-align: center;
+	display: inline-block;
+	font: 600 rem(14px)/em(30px,14px) $heading-font-family;
+	&:hover{color: #fff;}
+}
+.wo-vehiclesupload{
+	&__btn{
+		background:$lightbg;
+		min-height: 155px;
+		@extend %flex;
+		align-items:center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		color: #9aaec9;
+		&:hover{color: #9aaec9;}
+		& span{
+			display: block;
+			margin-top: 5px; 
+			font: 600 rem(14px)/em(20px,14px) $heading-font-family;
+		}
+		& i{
+			font-size: rem(26px);
+			line-height: em(30px,26px);
+		}
+	}
+}
+.wo-vcomlistwrap{
+	margin-top: 30px; 
+	border-top:1px solid $border-color;
+	&__title{
+		@extend %flex;
+		width: 100%;
+		padding:30px 0;
+		align-items:center;
+		h3{
+			font-size: rem(18px);
+			line-height: em(22px,18px);
+			margin-bottom: 0;
+			& img{
+				margin-right: 15px; 
+			}
+		}
+	}
+}
+.wo-vcomlist{
+	& li{
+		@extend %flex;
+		padding:19px 0;
+		align-items:center;
+		border-top:1px solid $border-color;
+		& h4,
+		& span{
+			width: 25%;
+			color: $theme-color;
+			font-size: rem(16px);
+			display: inline-block;
+			line-height: em(20px,16px);
+			margin-bottom: 0;
+			& i{
+				font-size: 12px;
+				margin-right: 5px; 
+				line-height: inherit;
+				& + i{
+					margin-left: 10px; 
+					padding-left:10px;
+					border-left:1px solid #b4b4b4;
+				}
+				&.fa-check{color: #3cd594;}
+				&.fa-times{color: #e74c3c;}
+			}
+		}
+		& span{padding-left: 30px;}
+	}
+	& .wo-moreitemslist{
+		background:#fcfcfc;
+		padding:14px 20px;
+		border:1px solid $border-color;
+		border-radius: 0 0 $radius $radius;
+		& a{
+			margin-left: auto;
+			display: inline-block;
+			font:rem(13px)/em(20px,13px) $heading-font-family; 
+			& i{margin-left: 10px;}
+		}
+	}
+}
+.wo-youlikewrap{
+	padding-top:0;
+	margin-top: -2px;
+}
+.wo-youliketitle{
+	margin: -5px 0 25px;
+	& h2{
+		font-size: rem(24px);
+		line-height: em(30px,24px);
+	}
+}
+.wo-youlike{
+	width: 100%;
+	@extend %flex;
+	margin:-15px 0;
+	& >div{margin: 15px 0;} 
+}
+.wo-youlikecam{
+	@extend %flex;
+	padding:30px;
+	text-align:center;
+	align-items: center;
+	border-radius:$radius;
+	flex-direction: column;
+	justify-content: center;
+	@extend %transition;
+	border: 1px solid $border-color;
+	&:hover{
+		@extend %themeboxshadow;
+		.wo-btn{background: $primary-color; }
+	}
+	.wo-vsicon{
+		width: 34px;
+		margin: 10px 0;
+		font-size: rem(14px);
+		line-height: em(34px,14px);
+		&:before,
+		&:after{display: none;}
+	}
+	.wo-btn{
+		min-width: 255px;
+		margin: 30px 0 0;
+		line-height: 44px;
+		background: #f7f7f7;
+	}
+}
+.wo-camitem{
+	& span{
+		display: block;
+		margin: 0 0 5px;
+		color: $theme-color;
+		font:700 rem(14px)/em(16px,14px) $heading-font-family;
+	}
+	& img + span{
+		margin: 5px 0 0;
+	}
+}

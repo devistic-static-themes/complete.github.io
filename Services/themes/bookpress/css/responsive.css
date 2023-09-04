@@ -1,0 +1,186 @@
+@charset "UTF -8";
+/* CSS Document 
+Author Name:themeperch
+Author URI:http://themeforest.net/user/themeperch?ref=themeperch
+Creation Date:19th October, 2016
+Description:A default stylesheet for Book Press Busisess Template Developed By themeperch.
+
+------------ MEDIA WIDTH ------------- 
+	max-width: 800px
+	max-width: 640px
+	max-width: 480px
+	max-width: 360px
+*/
+
+@media (max-width:800px) {
+
+	.toggle-menu{
+		display: block;		
+	}
+	.main-menu{
+		background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+		display: none;
+		z-index: 99;
+		position: relative;
+	}
+	.main-menu li ul.dropdown {
+		background: #222;
+		top: 44px;
+		width: 100%;
+	}
+	.sticky-wrapper.is-sticky .main-menu li a {
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.sticky-wrapper.is-sticky .toggle-menu{
+		top: -50px;
+	}
+	.book-author{
+		padding-left: 0;
+	}
+	.subscribe-now{
+		position: relative;
+		z-index: 99;
+	}
+	li.subscribe-now a {
+	  display: inline-block;
+	}
+	li.subscribe-now.pull-right {
+	  float: none !important;
+	}
+	.logo{
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		padding: 10px 0;
+	}
+	.header-area .col-md-3,
+	.header-area .col-md-7{
+		padding: 0;
+	}
+	.main-menu li{
+		display: block;
+		text-align: center;
+	}
+	.header-area .text-right{
+		text-align: center;
+	}
+	.book-description h2{
+		font-size: 22px;
+	}
+	.book-item-list.owl-theme .owl-dots .owl-dot,
+	.post-list.owl-theme .owl-dots .owl-dot{
+		display: inline-block;
+		margin-top: 25px;
+	}
+	.progress-work,
+	.book-info-image-holder{
+		margin-bottom: 30px;
+	}
+	.author-video-section{
+		background-attachment: scroll;
+		background-position: center !important; 
+	}
+	video{
+		display: none;
+	}
+	.video-container{
+		background: url("../images/video-background.jpg") no-repeat scroll center center / cover ;
+		min-height: 650px;
+		position: relative;
+		width: 100%;
+	}
+	.sidebar-wrap-content{
+		margin-top: 60px;
+	}
+}
+
+@media (max-width:640px) {
+	.header-slide-image {
+		margin-bottom: 100px;
+		width: 100%;
+	}
+	.display-flex{
+		display: block;
+	}
+	.author-image-holder{
+		margin-bottom: 30px;
+	}
+	.footer-social-icon,
+	.copyright p{
+		text-align: center;
+	}
+
+	.comment-list .children{
+		padding-left: 0;
+	}
+	.subscribe .form-control{
+		margin-bottom: 20px;
+	}
+	.contact-form input:last-child {
+		margin-bottom: 30px;
+	}
+	.header-left{
+		margin-bottom: 30px;
+	}
+
+}
+
+@media (max-width:480px) {
+	.comment li{
+		line-height: 26px;
+	}
+	.blog-post-content .blog-post-qotue::after{
+		top: 160px;
+	}
+	.author-info-image{
+		margin-bottom: 20px;
+	}
+	.author-desc {
+		clear: both;
+		display: block;
+		width: 100%;
+	}
+	.comment-info .author-desc {
+		clear: both;
+		display: block;
+		margin-left: 0;
+		padding: 20px;
+		width: 100%;
+	}
+	.book-description .btn{
+		margin-bottom: 20px
+	}
+	.book-description .btn:last-child{
+		margin: 0;
+	}
+
+	
+}
+
+
+@media (max-width:360px) {
+	.modal-dialog .btn {
+		margin-right: 0 !important;
+		margin-top: 10px;
+	}
+	.video-text{
+		padding: 0;
+	}
+	.comment li a{
+		font-size: 14px;
+	}
+	.author-title strong{
+		line-height: 26px;
+	}
+	.video-text .btn,
+	.social-link li a {
+	  margin-bottom: 10px;
+	}
+	.social-link{
+		text-align: center;
+	}
+	.description-table span{
+		min-width: 150px;
+	}
+	
+}
+

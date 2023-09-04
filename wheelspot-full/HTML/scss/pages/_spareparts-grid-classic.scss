@@ -1,0 +1,12 @@
+.wo-spareparts-grid{
+	&.wo-spareparts-classic{
+		& .wo-col-grid{
+			width: 50%;
+		}
+	}
+}
+.wo-spareparts-grid.wo-spareparts-classic {
+	.wo-col-grid.wo-col-full {
+		width: 100%;
+	}
+}

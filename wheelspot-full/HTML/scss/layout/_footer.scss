@@ -1,0 +1,201 @@
+.wo-footer-wrap{
+    position:relative;
+    background: $primary-color;
+    clip-path: polygon(0 160px, 100% 0%, 100% 100%, 0% 100%);
+    &:after,
+    &:before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        clip-path: polygon(0 160px, 100% 60px, 100% 100%, 0% 100%);
+    }
+    &:after{
+        background: rgba($theme-color,0.95);
+    }
+    &:before{
+        background:url(../images/footer/footer-img.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .wo-footershape{
+        position:absolute;
+        top: 0;
+        right: 0;
+    }
+}
+.wo-footer{padding: 240px 0 80px;}
+.wo-fpostwrap{
+    width: 100%;
+    margin: 0 0 40px;
+    &__title{
+        h4{
+            color: #fff;
+            line-height: em(28,24);
+            margin-bottom: 0;
+            & span{
+                color: $primary-color;
+                display: inline-block;
+            }
+        }
+    }
+}
+.wo-fpost{
+    display: flex;
+    flex-wrap: wrap;
+    padding:30px;
+    margin-top: 24px; 
+    border-radius: $radius;
+    background:#10304a;
+    flex-direction: column;
+    align-items: flex-start;
+    & img{margin: 0 0 15px;}
+    & h4{
+        color: $primary-color;
+        font-size: rem(18px);
+        margin: 0 0 4px;
+    }
+    & span{
+        margin: 0 0 14px;
+        color: #afb7bf;
+        line-height: em(23,15)
+    }
+    & a{
+        display: inline-block;
+        line-height: 1.2;
+    }
+}
+.wo-fjoinnow{
+    min-height: 160px;
+    border-radius: $radius;
+    border:6px solid rgba(#fff,0.1);
+    background:#10304a;
+    padding:30px;
+    align-items:center;
+    position:relative;
+    @extend %flex;
+    justify-content: space-between;
+    margin: 0 0 40px;
+    &__title{
+        h4{
+            line-height: em(28,24);
+            color: #fff;
+            margin-bottom: 0;
+            span{
+                color: $primary-color;
+                display: block;
+            }
+        }
+    }
+    &__info{
+        flex: 0 0 43%;
+        p{
+            margin-bottom: 0;
+            color: $secondary-color;
+        }
+    }
+    &__btn{
+        & a {line-height: 50px;}    
+    }
+    .wo-particles{z-index: 1;}
+}
+.wo-fthree-columns{
+    @extend %flex;
+}
+.wo-f-logo{
+    margin: 0 0 23px;
+    @extend %flex;
+}
+.wo-fdescription{
+    p{
+        color: $secondary-color;
+        margin-bottom: 0;
+    }
+}
+.wo-fshare{
+    margin-top: 23px; 
+    & a{
+        display: inline-block;
+        +a{margin-left: 7px; }
+    }
+}
+.wo-fwidget{
+    @extend %flex;
+    flex-direction: column;
+    &__title{
+        margin: 0 0 10px;
+        h5{
+            color: #fff;
+            margin-bottom: 0;
+        }
+    }
+    &__content{
+        line-height: 20px;
+        & li{
+            line-height: inherit;
+            list-style: none;
+            & + li{margin-top: 10px;}
+            & a{
+                position:relative;
+                padding-left:12px;
+                color: $secondary-color;
+                line-height: inherit;
+                &:before{
+                    width: 3px;
+                    height: 3px;
+                    border-radius:50%;
+                    background: $secondary-color;
+                    content: '';
+                    position:absolute;
+                    top: 10px;
+                    left: 0;
+                }
+            }
+            &.wo-morebtn{
+                a{
+                    color: #55acee;
+                    padding:0;
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.wo-footer-bottom{
+    @extend %flex;
+    border-top:1px solid rgba(#fff,0.1);
+}
+.wo-footernav-content{
+    @extend %flex;
+    margin: 13px 0;
+}
+.wo-copyrights{
+    color: $secondary-color;
+    margin-bottom: 0;
+    a{
+        text-decoration: none;
+        &:hover{text-decoration: none;}
+    }
+}
+.wo-footernav{
+    margin-left: auto;
+    & ul{
+        font-family: $heading-font-family;
+        @extend %flex;
+        margin: 0 -11px;
+        li{
+            margin: 0 11px;
+            list-style: none;
+            line-height: inherit;
+            a{
+                font-size: rem(14);
+                color: $secondary-color;
+            }
+        }
+    } 
+}

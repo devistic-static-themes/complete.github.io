@@ -1,0 +1,30 @@
+//
+// _feature.scss
+//
+.features {
+    @each $name,
+    $value in $colors {
+        &.feature-#{$name} {
+            .title {
+                &:hover {
+                    color: $value !important;
+                }
+            }
+            .icon {
+                color: $value !important;
+                background-color: rgba($value, 0.05) !important;
+            }
+        }
+    }
+}
+
+.features {
+    transition: all 0.5s ease;
+    .icon {
+        height: 65px;
+        width: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

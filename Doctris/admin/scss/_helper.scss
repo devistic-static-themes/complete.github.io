@@ -1,0 +1,21 @@
+//
+// helper.scss
+//
+.section {
+    padding: 100px 0;
+    position: relative;
+
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+}
+.bg-overlay {
+    background-color: $overlay;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%
+}

@@ -1,0 +1,295 @@
+.wo-dbpost {
+    @extend %flex;
+    @extend %dboxshadow;
+    border-radius: $radius;
+    border: 1px solid $border-color;
+    background: $white-bg;
+    &__title {
+        width: 100%;
+        @extend %flex;
+        text-align: center;
+        padding: 25px 30px;
+        border-bottom: 1px solid #eee;
+        & h2 {
+            margin: 0 auto;
+            font-size: rem(20px);
+            line-height: em(23px, 20px);
+        }
+    }
+    &__content {
+        padding: 30px;
+        width: 100%;
+        .wo-dbpoststep:nth-child(even) {
+            & .wo-dbpoststep__img {
+                order: 2;
+                margin-right: 0;
+                margin-left: 30px;
+            }
+            & .wo-dbpoststep__title {
+                text-align: right;
+            }
+        }
+    }
+}
+
+.wo-savenext {
+    margin: 20px 0 0;
+    width: 100%;
+    @extend %flex;
+    align-items: center;
+    & .wo-btn {
+        margin-left: auto;
+    }
+    & .wo-savebtn {
+        color: #b5b4b4;
+        margin-left: auto;
+        font: 600 rem(14px)/em(16px, 14px) $heading-font-family;
+        &+.wo-btn {
+            margin-left: 30px;
+        }
+    }
+}
+
+.wo-prevstep {
+    line-height: em(23px, 16px);
+    color: $form-color;
+    font-size: rem(16px);
+    display: inline-block;
+}
+
+.wo-dbpoststep {
+    width: 100%;
+    padding: 26px 29px;
+    @extend %flex;
+    flex-wrap: nowrap;
+    &__img {
+        margin-right: 30px;
+    }
+    &__title {
+        align-self: center;
+        & h3 {
+            margin: 0 0 5px;
+            font-size: rem(18px);
+            line-height: em(20px, 18px);
+        }
+        & p {
+            margin: 0 0 12px;
+        }
+    }
+    &+.wo-dbpoststep {
+        border-top: 1px solid $border-color;
+    }
+}
+
+.wo-dbpostfooter {
+    padding: 22px 70px;
+    text-align: center;
+    border-top: 1px solid $border-color;
+    & p {
+        color: $form-color;
+        font-size: rem(14px);
+        line-height: em(23px, 14px);
+        margin: 0;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.wo-stepstitleform {
+    & fieldset {
+        margin: -10px;
+    }
+    & .form-group {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        & .wo-titleinput {
+            flex: auto;
+            padding-top: 0;
+            color: $theme-color;
+            margin: 0 0 6px;
+        }
+        & .form-control {
+            border-color: #efefef;
+        }
+    }
+}
+
+.wo-vehicle-group {
+    & .wo-select {
+        & img {
+            position: absolute;
+            left: 19px;
+            z-index: 11;
+            &+.form-control {
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+.wo-advehiclef {
+    margin-top: 20px;
+    & .wo-profileform {
+        & .form-group {
+            position: relative;
+            .wo-select {
+                flex: 0 0 43.5%;
+                & img {
+                    position: absolute;
+                    left: 19px;
+                }
+                .form-control {
+                    padding-left: 52px;
+                    border-radius: $radius 0 0 $radius;
+                }
+                &+.form-control {
+                    border-left: 0;
+                    padding-right: 70px;
+                    border-radius: 0 $radius $radius 0;
+                }
+            }
+            .wo-removelist {
+                right: 25px;
+                position: absolute;
+            }
+        }
+    }
+    &__check {
+        ul {
+            margin: 0 -10px;
+            @extend %flex;
+            li {
+                width: 50%;
+                padding: 9px 10px 10px;
+                list-style-type: none;
+            }
+        }
+        & .wo-checkbox {
+            & label {
+                padding: 0 0 0 25px;
+                font-size: rem(15px);
+            }
+        }
+    }
+}
+
+.wo-pricecounter {
+    @extend %flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid $border-color;
+    border-radius: $radius;
+    padding: 10px;
+    &__country {
+        padding: 5px 12px;
+        color: $theme-color;
+        border-radius: $radius;
+        background: $lightbg;
+        display: inline-block;
+        font: 500 rem(12px)/em(20px, 12px) $heading-font-family;
+    }
+    & .form-control {
+        border: 0;
+        height: 30px;
+        width: auto;
+        flex: auto;
+        max-width: 100%;
+        padding-right: 0;
+    }
+}
+
+.wo-priceflexible {
+    margin: 30px 0 0;
+    & label {
+        font-size: rem(15px);
+    }
+    &+.wo-savenext {
+        padding-top: 30px;
+        margin: -5px;
+        justify-content: space-between;
+    }
+}
+
+.wo-inputcontent {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    height: 48px;
+    display: flex;
+    padding: 0 19px;
+    background: #fff;
+    color: $form-color;
+    align-items: center;
+    font-size: rem(12px);
+    line-height: em(16px, 12px);
+    & i {
+        margin-left: 5px;
+        position: static;
+    }
+}
+
+.wo-savenextlast {
+    & .wo-btn {
+        margin: 5px;
+        line-height: 44px;
+    }
+    & .wo-quickpre {
+        color: #fff;
+        background: $bg-green;
+    }
+}
+// ProgressBar Style
+.ProgressBar,
+.ProgressBar-contentCircle {
+    display: flex;
+    height: 62px;
+    position: absolute;
+    width: 62px;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-36deg);
+    -webkit-transform: rotate(-36deg);
+}
+
+.ProgressBar-background,
+.ProgressBar-circle {
+    fill: none;
+    stroke: $bg-green;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 125px;
+    position: relative;
+    z-index: 10;
+}
+
+.ProgressBar-background {
+    stroke: $border-color;
+    stroke-width: 3;
+    z-index: 0;
+}
+
+.ProgressBar-percentage {
+    color: $theme-color;
+    font: 700 rem(16px)/em(16px, 13px) $heading-font-family;
+    text-align: center;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+.wo-strengthhead__area {
+    margin: 0 0 0 70px;
+}
+.wo-dbpoststep {
+    .wo-dbpoststep__img {
+        img{
+            min-width: 162px;
+            width: 100%;
+        }
+    }
+}

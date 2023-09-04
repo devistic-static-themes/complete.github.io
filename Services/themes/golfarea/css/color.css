@@ -1,0 +1,103 @@
+/*color: #68B90B;*/
+/*Primary color #....*/
+a:hover,
+a:focus,
+.btn:hover,
+.btn:focus,
+.color-bg .btn:hover,
+.color-bg .btn:focus,
+.heading_menu a:hover, 
+.header-video a:hover,
+.header-video a:focus,
+.features-menu-list ul li a:hover,
+.testimonial-quote:after,
+.testimonial-quote:before,
+.recent-posts ul a:hover,
+.recent-posts ul a:focus,
+.categories a:hover,
+.categories a:focus,
+.author-desc .author-title a:hover,
+.author-desc .author-title a:focus,
+.widget ul.categories a i,
+.color-text,
+.copy a,
+.mailto a,
+.search span:hover,
+.search span:focus,
+.sidebar-menu-icon span:hover,
+.sidebar-menu-icon span:focus,
+.coache-content h3 a:hover,
+.coache-content h3 a:focus,
+.coache-content span a:hover,
+.coache-content span a:focus,
+.read-more,
+a.scroll-top:hover,
+a.scroll-top:focus,
+.blog-post-content a:focus,
+.blog-post-content a:hover,
+.features-single-content ul li::after,
+.color-bg .subscribe-form input[type="submit"]{
+	color: #68B90B;
+}
+
+/*.search-inner,*/
+.btn,
+.swiper-slider-2 .slide-next:hover,
+.swiper-slider-2 .slide-prev:hover, 
+.swiper-slider-1 .slide-next:hover, 
+.swiper-slider-1 .slide-prev:hover,
+.price-single:hover .price-head h2,
+.post-list.owl-theme .owl-nav div,
+.post-list:hover.owl-theme .owl-nav div,
+.post-list:focus.owl-theme .owl-nav div,
+.coache-list.owl-theme .owl-nav div,
+.coache-list:hover.owl-theme .owl-nav div,
+.coache-list:focus.owl-theme .owl-nav div,
+.post-image-slide.owl-theme .owl-nav div:hover,
+.post-image-slide.owl-theme .owl-nav div:focus,
+.features-content-image-list.owl-theme .owl-nav div:hover,
+.features-content-image-list.owl-theme .owl-nav div:focus,
+.owl-theme .owl-dots .owl-dot.active span,
+.blog-post-pagination a.active,
+.blog-post-pagination a:hover,
+.blog-post-pagination a:focus,
+.panel > a::after,
+a.scroll-top,
+.tagcloud a:hover,
+a.view-details,
+ button,
+ .shape,
+ input[type="submit"],
+ input[type="reset"],
+.color-bg,
+.single-post-item:hover .film, .graph,
+.cssmenu .menu-button::after
+{
+	background-color: #68B90B;
+}
+
+
+.btn-outline:hover{
+	background-color: #68B90B !important;
+}
+.btn,
+.btn:hover,
+.btn:focus,
+footer,
+a.scroll-top,
+.blog-post-pagination a.active,
+.dark-bg .subscribe-form input[type="submit"],
+.blog-post-pagination a:hover,
+ button,
+a.scroll-top:hover,
+a.scroll-top:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+input[type="submit"],
+input[type="reset"],
+.features-menu-list ul li.active,
+.cssmenu .menu-button::before{
+	border-color: #68B90B;
+}

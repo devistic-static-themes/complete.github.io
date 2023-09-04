@@ -1,0 +1,37 @@
+@charset "UTF -8";
+/* CSS Document 
+Author Name:themeperch
+Author URI:http://themeforest.net/user/themeperch?ref=themeperch
+Creation Date:
+Description:
+
+------------ MEDIA WIDTH ------------- 
+	max-width: 800px
+	max-width: 640px
+	max-width: 480px
+	max-width: 360px
+*/
+
+
+@media (max-width:800px) {
+
+	.single-clss aside {
+	  top: 0;
+	}
+
+}
+@media (max-width:640px) {
+
+	.award-logo{
+		margin-bottom: 30px;
+	}
+
+}
+@media (max-width:480px) {
+
+
+}
+@media (max-width:360px) {
+
+
+}

@@ -1,0 +1,62 @@
+.wo-innerbannertwo-wrap.bg-color{
+	background: #fef8dd;
+}
+.wo-innerbannertwo__form{
+	& input{
+		max-width: 400px;
+		border-radius:$radius 0 0 $radius;
+	}
+	& span{
+		display: block;
+		font-style: italic;
+		font-size: rem(13px);
+		line-height: em(16,13);
+		font-family: $heading-font-family;
+	}
+}
+.wo-submitbtn{
+	font-size: 18px;
+	min-width: 50px;
+	line-height: 50px;
+	display: inline-block;
+	color: $theme-color;
+	border-radius: 0 $radius $radius 0;
+	text-align: center;
+	background: $primary-color;
+	&:focus,
+	&:hover{
+		color: $theme-color;
+	}
+}
+.wo-forumgrid-wrap{
+	@extend %flex;
+	width: 100%;
+	.wo-searchhead{
+		width: 100%;
+		margin: 0 0 30px;
+		&__type{
+			width: auto;
+			margin-left: -5px;
+			& .wo-select{
+				margin-right: auto; 
+			}
+			& .wo-searchsort{
+				font-size:rem(14px);
+				width: auto;
+				padding: 0 20px;
+				align-items: center;
+				display: flex;
+				& i{
+					margin-left: 10px; 
+					font-size:rem(15px);
+				}
+			}
+		}
+	}
+}
+.wo-articles-wrap{
+	.wo-pagination{
+		margin-top: 10px;
+		justify-content: center;
+	}
+}

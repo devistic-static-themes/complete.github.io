@@ -1,0 +1,205 @@
+/*Primary Color*/
+
+
+/*color*/
+a:focus, a:hover,
+.color-text,
+.video-content h2 span,
+.header-left ul li a i,
+.close-popup,
+.play-video a:hover,
+.play-video a:focus,
+.blog-post-single-item ul li a:hover,
+.blog-post-single-item ul li a:focus,
+a.read-more,
+.read-more:focus,
+.blog-post-content h4 a:hover,
+.blog-post-content h4 a:focus,
+.recent-posts ul a:hover,
+.header-menu li:hover,
+.header-menu li:hover a,
+.star-rating span,
+.mc-msg {
+	color: #0275d8;
+}
+
+/*background-color*/
+.feature .feature-icon-wrap,
+.btn-primary.active, 
+.btn-primary:active, 
+.open > .dropdown-toggle.btn-primary,
+.btn-gray-outline:hover,
+.btn-gray-outline:focus,
+.btn-primary,
+.btn-primary:focus,
+.btn-primary-outline:focus,
+.btn-primary-outline:hover,
+.primary-bg,
+.main-menu > li.active > a,
+.main-menu li a:hover,
+.main-menu li a:focus,
+.header-slider,
+.post-list:hover.owl-theme .owl-nav>div,
+.book-item-list:hover.owl-theme .owl-nav>div,
+.client-author,
+.film,  
+.graph,
+.blog-post-pagination .pagination li a:hover,
+.blog-post-pagination .pagination li a.active,
+.blog-search .form-control.submit,
+.tagcloud a:hover,
+a.scroll-top,
+.book-item-list.owl-theme .owl-dots .owl-dot.active span, 
+.book-information .owl-theme .owl-dots .owl-dot.active span,
+.post-list.owl-theme .owl-dots .owl-dot.active span,
+.testimonial-area .owl-theme .owl-dots .owl-dot.active span {
+	background-color: #0275d8;
+}
+
+/*border-color*/
+
+.subscribe input[type="submit"]:hover,
+.btn-primary:focus,
+.btn-gray-outline:hover,
+.btn-gray-outline:focus,
+.btn-primary,
+.btn-primary:focus,
+.btn-primary-outline,
+.btn-primary-outline:hover,
+.btn-primary-outline:focus,
+.social-link li a:hover,
+.post-list:hover.owl-theme .owl-nav>div,
+.book-item-list:hover.owl-theme .owl-nav>div,
+.blog-post-pagination .pagination li a:hover,
+.blog-post-pagination .pagination li a.active,
+.book-author blockquote {
+	border-color: #0275d8;
+}
+ 
+
+
+/*Secondary Color*/
+
+/*color*/
+.btn-secondary-outline,
+.btn-secondary-outline,
+.btn-secondary-outline:focus {
+	color: #f76e2e;
+}
+
+/*background-color*/
+.feature:hover .feature-icon-wrap,
+.main-menu li.subscribe-now:hover a,
+.main-menu li.subscribe-now:focus a,
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary-outline:focus,
+.secondary-bg,
+.btn-primary:hover {
+	background-color: #f76e2e;
+}
+
+/*border-color*/
+.btn-primary:hover,
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary-outline,
+.btn-secondary-outline:focus,
+.btn-secondary-outline:hover,
+.main-menu li.subscribe-now:hover a {
+	border-color: #f76e2e;
+}
+
+/*Dark Alt Color*/
+/*color*/
+.btn-secondary-outline,
+.social-link li a,
+.selectize-control.single .selectize-input::after,
+.blog-post-pagination .pagination li a,
+.blog-post-content .blog-post-qotue p,
+.blog-post-single-item ul li a,
+.recent-posts ul a,
+.tagcloud a {
+	color: #888;
+}
+
+/*background-color*/
+.dark-bg,
+.book-item-list.owl-theme .owl-dots .owl-dot span,
+.book-information .owl-theme .owl-dots .owl-dot span,
+.post-list.owl-theme .owl-dots .owl-dot span,
+.testimonial-area .owl-theme .owl-dots .owl-dot span {
+	background-color: #888;
+}
+
+/*border-color*/
+.btn-secondary-outline:hover,
+.social-link li a {
+	border-color: #888;
+}
+
+/*Gray Color*/
+.gray-bg {
+	background-color: #ddd;
+}
+.table-bordered tr th:first-child,
+.table-bordered tr th:last-child,
+.table thead,
+.table > thead > tr > th,
+.table-bordered > thead > tr > td, 
+.table-bordered > thead > tr > th {
+	border-color: #ddd !important;
+}
+
+/*Light Color*/
+
+/*color*/
+/*background-color*/
+.light-bg,
+.order-review,
+.blog-post-qotue,
+.table > thead > tr > th {
+	background-color: #f2f2f2;
+}
+
+/*border-color*/
+ .author-content-details,
+ .author-desc .reply a {
+	border-color: #f2f2f2 !important;
+}
+
+.selectize-input {
+	border-color: #ccc
+}
+
+/*Dark Color*/
+/*color*/
+.btn-dark-outline,
+.table > thead > tr > th,
+.checkout-billing-adddress label,
+.author-title strong,
+h1, h2, h3, h4, h5 {
+	color: #3a3a3a;
+}
+
+/*background-color*/
+.btn-dark,
+.btn-dark-outline:hover,
+.btn-dark-outline:focus,
+.btn-dark:hover {
+	background-color: #3a3a3a;
+}
+.copyright,
+.header-area {
+	background: #222;
+}
+
+/*border-color*/
+.btn-dark,
+.btn-dark:focus,
+.btn-dark-outline,
+.btn-dark:hover {
+	border-color: #3a3a3a;
+}
+
+

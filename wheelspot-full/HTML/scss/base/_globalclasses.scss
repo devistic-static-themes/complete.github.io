@@ -1,0 +1,169 @@
+.wo-main {padding: 20px 10px;}
+.wo-homepage .wo-main {padding: 20px 30px;}
+.wo-main-section {padding: 80px 0;}
+.wo-px-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.wo-stars,
+.wo-stars span {
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+}
+.wo-stars {
+    display: block;
+    width: 78.13px;
+    &:before,
+    span:after {
+        top: 0;
+        left: 0;
+        color: #ffcc03;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+        position: absolute;
+        letter-spacing: 1px;
+        font-family: 'Font Awesome 5 Free';
+        content: '\f005 \f005 \f005 \f005 \f005';
+    }
+    &:before {
+        color: #c4c4c4;
+    }
+    span {
+        @extend %flex;
+        width: 80%;
+        overflow: hidden;
+    }
+}
+
+.wo-locationmap {
+    width: 100%;
+    height: 200px;
+    border-radius: $radius;
+}
+
+.wo-dhb-holder {
+    padding-top: 30px;
+}
+
+.wo-dhb-content {
+    padding: 30px 29px 29px;
+    border-radius: $radius;
+    @extend %border;
+}
+
+// Scroll Bar Starts
+.mCSB_inside>.mCSB_container {
+    margin-right: 0;
+}
+
+.mCSB_scrollTools {
+    visibility: hidden;
+}
+
+// Scroll Bar Ends
+// Tippy Start
+.tippy-box {
+    background-color: $theme-color;
+    border-radius: $radius;
+    color: #fff;
+    font: 400 12px $body-font-family;
+}
+
+.tippy-arrow {
+    color: $theme-color;
+}
+
+.tippy-content {
+    padding: 6.5px 10.5px;
+}
+
+.wo-main {
+    position: relative;
+}
+
+.opendnavbar {
+    @extend %transition;
+}
+
+.wo-dnavbar {
+    @extend %transition;
+}
+.sl-green {
+    color: #3cd594;
+}
+/*Preloader Style*/
+.preloader-outer {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	position: fixed;
+	background: #fff;
+}
+.loader {
+	top: 50%;
+	left: 50%;
+	margin:-20px 0 0 -20px; 
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+	-webkit-animation: load3 1.4s infinite linear;
+	animation: load3 1.4s infinite linear;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+    transform: translateZ(0);
+    background: #fdc500;
+    background: -moz-linear-gradient(left, #fdc500 10%, rgba(255, 88, 81, 0) 42%);
+    background: -webkit-linear-gradient(left, #fdc500 10%, rgba(255, 88, 81, 0) 42%);
+    background: -o-linear-gradient(left, #fdc500 10%, rgba(255, 88, 81, 0) 42%);
+    background: -ms-linear-gradient(left, #fdc500 10%, rgba(255, 88, 81, 0) 42%);
+    background: linear-gradient(to right, #fdc500 10%, rgba(255, 88, 81, 0) 42%);
+    
+}
+
+.loader:before {
+	width: 50%;
+	height: 50%;
+	border-radius: 100% 0 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+}
+.loader:after {
+	background: #fff;
+	width: 75%;
+	height: 75%;
+	border-radius: 50%;
+	content: '';
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,226 @@
+.wo-twocolumns{
+	width: 100%;
+	@extend %flex;
+}
+.wo-widget{
+	@extend %flex;
+	border:1px solid $border-color;
+	&:first-child{border-radius: $radius $radius 0 0;}
+	&:last-child{border-radius:0 0 $radius $radius;}
+	& + .wo-widget{border-top: 0;}
+	&__title{
+		padding: 27px 30px 16px;
+		width: 100%;
+		@extend %flex;
+		align-items:center;
+		& h2{
+			font-weight: 500;
+			font-size: rem(16px);
+			margin-bottom: 0;
+		}
+		& a{
+			margin-left: auto;
+			font-size:rem(12px); 
+			display: inline-block;
+			line-height: em(18,12);
+			font-family: $heading-font-family;
+		}
+	}
+	& .collapse{width: 100%;}
+	&__content{
+		padding: 0 30px 28px;
+		width: 100%;
+	}
+}
+.wo-collapse-title{
+	padding: 27px 30px;
+	cursor: pointer;
+	position: relative;
+	background: #fcfcfc;
+	@extend %transition;
+	& + div{width: 100%}
+	&:before{
+		min-width: 25px;
+		content: "\e61a";
+		font-family: themify;
+		font-size: rem(12px);
+		line-height:em(18,12);
+		color: $form-color;
+	}
+	&[aria-expanded="true"]{
+		background:transparent;
+		padding-bottom: 19px;
+		&:before{
+			content: "\e622";
+		}
+	}
+}
+.wo-widgetcheckbox{
+	display: block;
+	.wo-radio,
+	.wo-checkbox{
+		@extend %flex;
+		margin: 5px;
+		& label{
+			display: flex;
+			justify-content: space-between;
+			& em{
+				font-style: normal;
+			}
+		}
+		& + .wo-radio,
+		& + .wo-checkbox{
+			margin-top: 13px;
+		}
+	}
+	.wo-checkbox input[type=checkbox] + label:after{font-weight: 700;}
+}
+.wo-showmorebtn{
+	font-size:rem(13px);
+	display: inline-block;
+	line-height: em(14,13);
+	font-family: $heading-font-family;
+	margin-top: 2px;
+}
+.wo-widgetrslider{
+	padding-bottom: 26px;
+	padding-top: 11px;
+	.wo-titleinput{
+		padding-top: 15px;
+		display: flex;
+		color: $theme-color;
+		input{
+			padding: 0;
+			height: auto;
+			border: 0;
+			border-radius: 0;
+			margin-left: 2px;
+			color: $theme-color;
+			width: 100px;
+			flex: auto;
+		}
+	}
+	.ui-slider{
+		margin-top: 21px;
+		height: 1px;
+	}
+	.wo-rangeslider-bg{
+		top: auto;
+		bottom: 4px;
+	}
+	.ui-slider-handle{top: -5px;}
+}
+.wo-filter-color{
+	.wo-checkbox label,
+	.wo-radio label{
+		padding: 0 0 0 20px;
+		& > span i{
+			margin-right: 5px; 
+			font-size:rem(16px);
+		}
+	}
+}
+.wo-green i{color: #2ecc71;}
+.wo-blue i{color: #3498db;}
+.wo-purple i{color: #9b59b6;}
+.wo-yellow i{color: #f1c40f;}
+.wo-orange i{color: #e67e22;}
+.wo-black i{color: #000;}
+.wo-widget-footer{
+	.wo-widget__content{
+		padding: 27px 30px 28px;
+		@extend %flex;
+		text-align: center;
+		flex-direction: column;
+		& span{
+			display: block;
+			font-size:rem(16px);
+			line-height: em(16,16);
+			color: $theme-color;
+			margin: 0 0 18px;
+		}
+		& .wo-btn{
+			margin: 0 0 18px;
+			line-height: 44px;
+		}
+		& .wo-clear-btn{
+			color: $form-color;
+			font-size:rem(14px);
+			line-height: em(14,14);
+			font-family: $heading-font-family;
+		}
+	}
+}
+.wo-vehicleslist{
+	margin: -30px 0 0;
+	.wo-pagination{
+		justify-content: center;
+		margin-top: 40px;
+	}
+}
+.wo-topvehicles-list{
+	padding: 0;
+	margin: 30px 0 0;
+	border: 0;
+	border-right: 1px solid #eee;
+	& >.wo-vehicles-img,
+	& .wo-vehiclesslider{
+		float: left;
+		max-width: 285px;
+	}
+	&.wo-topvehicles{
+		&:before{content: none;} 
+	}
+	.wo-vehicles,
+	.wo-postmeta{
+		flex:auto;
+		margin: 0;
+		align-items: center;
+	}
+	.wo-vehicles{
+		min-height: 193px;
+		padding-top: 25px;
+		@extend %border-top;
+		border-radius: 0 $radius 0 0;
+	}
+	.wo-postmeta{
+		@extend %border-bottom;
+		border-radius: 0 0 $radius 0;
+		padding-right: 29px;
+		padding-left: 29px;
+	}
+	.wo-vehicles-img{
+		border-radius: $radius 0 0 $radius;
+	}
+	.wo-vehicles__title h5 span em{
+		font-size: 14px;
+		font-weight: 400;
+		color: $form-color;
+		font-family: $body-font-family;
+	}
+	.wo-username{
+		padding:0;
+		& img{
+			margin-right: 15px;
+		}
+	}
+}
+
+.wo-widgetfilter{
+	display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+	.wo-collapse-title{
+		width: 100%;
+	}
+	> a {
+		position: absolute;
+	    right: 30px;
+		top: 24px;
+}
+}
+.wo-widgetcheckbox + [data-readmore-toggle] {
+    display: flex;
+	margin: 4px 0 0 0;
+}

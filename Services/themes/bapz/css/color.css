@@ -1,0 +1,41 @@
+/*color*/
+.btn-primary:hover,
+.btn-primary:focus,
+.menu-items li ul li a:hover,
+.menu-items li ul li a:focus,
+.color-text,
+.primary-color{
+	color: #099f7e;
+}
+.share-icons a:focus,
+.share-icons a:hover,
+.alert-warning,
+.header-slider .owl-nav button.owl-prev:hover,
+.header-slider .owl-nav button.owl-next:hover,
+.tagcloud a,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle,
+.btn-primary,
+.menu-items > li.active > a,
+.menu-items > li:hover > a,
+.menu-items > li:focus > a,
+.color-bg,
+.primary-bg{
+	background-color: #099f7e;
+}
+.tagcloud a,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle,
+.form-control:focus,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary,
+.color-border{
+	border-color: #099f7e;
+}
+.menu-item li{
+	color: #636363;
+}
+a{
+	color: #858585;
+}

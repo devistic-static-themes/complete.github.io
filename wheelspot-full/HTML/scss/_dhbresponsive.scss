@@ -1,0 +1,527 @@
+@media (max-width:1680px) {}
+@media (max-width: 1199px) and (min-width: 992px){
+    .wo-message__userlist{
+        .wo-message__userlist--content{
+           flex-direction: column;
+       }
+       .wo-message__userlist--text{padding: 10px 0 0;}
+    }
+    .wo-dnavbar__title,
+    .wo-dnavbar__nav,
+    .wo-dnavbar__nav ul li a{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .wo-strengthhead__area {margin: 69px 0 0 0;}
+}
+@media (max-width:1199px) {
+    .wo-signup-status .wo-radio {
+        width: 100%;
+    }
+    .wo-profileform fieldset .form-group {
+        margin: 0;
+    }
+    .wo-packages-features__package h3{right: -45px;}
+}
+
+@media (max-width:991px) {
+    .wo-packages-features__header__radiowrapper {
+        margin: 0;
+    }
+    .wo-message .wo-bannertabs-nav li {
+        width: 100%;
+    }
+    .wo-stats__content {
+        margin: 0 0 15px;
+    }
+    .wo-searchhead__title {
+        width: 100%;
+    }
+    .wo-mysaved-adds .wo-savelistad__image {
+        margin: 0 20px 0;
+    }
+    .wo-mysaved-adds {
+        .wo-savelistad {
+            .wo-vehicles {
+                align-items: flex-start;
+                padding: 0;
+            }
+        }
+    }
+    .wo-my-adds .wo-delicon {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-icon4 {
+        display: block;
+    }
+    .wo-dnavbar {
+        position: absolute;
+        left: -590px;
+        top: -50px;
+        z-index: 5;
+        background: $white-bg;
+    }
+    .opendnavbar {
+        left: 0;
+        width: 100%;
+        top: -50px;
+    }
+    .wo-message__holder {
+        flex-direction: column;
+    }
+    .wo-message__userlist {
+        width: 100%;
+        max-height: 537px;
+    }
+    .wo-message__userlist--text {
+        width: 100%;
+    }
+    .wo-profilestrength {
+        display: none;
+    }
+    .wo-my-adds .wo-delicon a:hover {
+        width: 33.3%;
+    }
+    .wo-message__usermessages{
+        display: none;
+        border-left: 0;
+    }
+    .wo-open-message{
+        .wo-message__userlist{display: none;}
+        .wo-message__usermessages,
+        .wo-messageback{display: block;}
+    }
+    .wo-bannertabs-nav li + li a {
+        border-left: 1px solid $border-color;
+    }
+    .wo-message__title p{padding-left: 5px;}
+}
+
+@media (max-width:768px) {
+    .animated_checkbox {
+        margin: 15px 0;
+    }
+    .wo-settingsave__btns {
+        margin-right: 0;
+    }
+    .wo-packages-features__header {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .wo-packages-features__buypakage {
+        background: inherit;
+        width: 100%;
+    }
+    .wo-alert__holder__titlearea {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wo-alert__holder__details {
+        padding: 10px 0;
+    }
+    .wo-packages-features__header__radiowrapper {
+        margin: 15px 0 0;
+    }
+}
+
+@media (max-width:767px) {
+    .wo-profileform .wo-titleinput {
+        margin: 3px 0 5px;
+
+    }
+    .wo-packages-features__package h3 {
+        right: -52px;
+    }
+    .wo-socialmedialist {
+        left: -20px;
+    }
+    .wo-profileform fieldset .form-group.animated_checkbox {
+        margin: 20px 0;
+    }
+    .wo-mysaved-adds .wo-savelistad__image {margin: 0 0 20px;}
+    .wo-passwordform{
+        flex-direction: column;
+        margin: -4px 0 0;
+    }
+    .wo-passwordform .wo-profileform {
+        width: 100%;
+        padding: 0;
+        &:first-child{
+            .wo-titleinput{margin-top: 0;}
+        }
+        &:last-child{
+            .form-control{margin-bottom: 0;}
+        }
+    }
+    .wo-profileform .wo-titleinput {
+        padding: 0;
+    }
+    .wo-profileform .form-control {
+        margin: 0 0 5px;
+    }
+}
+
+@media (max-width:640px) {
+    .wo-packages-features__package {
+        h3 {
+            position: relative;
+            margin: 15px 0;
+            width: 100%;
+            transform: none;
+            right: auto;
+        }
+    }
+    .wo-packages-features__package__dots {
+        display: none;
+    }
+    .wo-packages-features__package__dots:after {
+        display: none;
+    }
+    .wo-packages-features__card {
+        display: block;
+    }
+    .wo-packages__content {
+        border-left: 1px solid $border-color;
+    }
+    .wo-feature {
+        border-left: 1px solid $border-color;
+        border-top: 0;
+    }
+    .wo-packages-features .wo-innerbannertwo-wrap {
+        flex-direction: column;
+    }
+    .wo-packages-features .wo-innerbannertwo-wrap__pakage {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+}
+
+@media (max-width:568px) {
+    .wo-themeform .form-group {
+        display: block;
+    }
+    .wo-locationtag a {
+        top: -7px;
+        height: auto;
+    }
+    .wo-inputicon i {
+        top: 7px;
+    }
+    .wo-profileformvtwo fieldset .wo-inputicon i {
+        top: 32px;
+    }
+    .wo-profileformvtwo fieldset .wo-locationtag a {
+        top: 23px;
+    }
+    .wo-timesetting {
+        & ul {
+            & li {
+                width: 50%;
+                &:nth-child(3n+1) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .wo-forumgrid-wrap .wo-searchhead__type .wo-select {
+        min-width: 180px;
+    }
+    .wo-articles__img img {
+        width: 100%;
+    }
+    .wo-advehiclef .wo-profileform .form-group .wo-select img {
+        top: 16px;
+    }
+    .wo-advehiclef .wo-profileform .form-group .wo-select+.form-control {
+        border-left: 1px solid $form-border;
+        border-top: 0;
+        border-radius: 0 0 4px 4px;
+    }
+    .wo-pricecounter {
+        position: relative;
+        em {
+            position: absolute;
+            top: 100%;
+            margin: 10px 0 0;
+            left: 0;
+        }
+    }
+    .wo-mysaved-adds {
+        flex-direction: column;
+    }
+    .wo-delicon {
+        width: 100%;
+    }
+    .wo-delicon a {
+        line-height: rem(30px);
+    }
+    .wo-my-adds .wo-delicon a {
+        width: 33.33%;
+        padding: 10px 0;
+    }
+    .wo-my-adds .wo-delicon .wo-edit {
+        color: #55acee;
+        border-left: 1px solid #eee;
+        border-radius: 0;
+        border-top: 0;
+    }
+    .wo-savedadd .wo-mysaved-adds .wo-savelistad {
+        border-right: 0;
+    }
+    .wo-advehiclef .wo-profileform .form-group {
+        position: relative;
+        margin: 20px 0;
+    }
+    .wo-advehiclef .wo-profileform .form-group .wo-removelist {
+        top: -17px;
+    }
+}
+
+@media (max-width:521px) {
+    .wo-pagination ul {
+        justify-content: center;
+        li {
+            margin: 0 15px 10px 0;
+        }
+    }
+}
+@media (max-width:480px) {
+    .new-alert .wo-alert__holder {
+        padding: 0;
+    }
+    .wo-settingsave {
+        flex-direction: column;
+        align-items: flex-start;
+        .wo-settingsave__btns {
+            margin: 20px 0 0;
+        }
+    }
+    .wo-alert__holder__details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wo-alert__holder__details figure {
+        margin: 10px 0;
+    }
+    .new-alert:before {
+        left: 13px;
+        top: 38px;
+    }
+    .wo-alert__holder {
+        padding: 0 0 0 5px;
+    }
+    .wo-packages-features__header {
+        display: block;
+    }
+    .wo-packages-features__buypakage {
+        margin: 0 0 15px;
+    }
+    .wo-dbpoststep {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .wo-dbpoststep__title {
+        margin: 15px 0 0;
+    }
+    .wo-dbpost__content {
+        .wo-dbpoststep {
+            &:nth-child(even) {
+                .wo-dbpoststep__title {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .wo-dbpost__content {
+        .wo-dbpoststep {
+            &:nth-child(even) {
+                .wo-dbpoststep__img {
+                    order: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .wo-dbpostfooter {
+        padding: 20px 20px;
+    }
+    .wo-tablepagination {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin: 0 10px 10px;
+            }
+        }
+    }
+    .wo-locationtag .form-control {
+        padding-right: 20px;
+    }
+    .wo-profileformvtwo fieldset .wo-locationtag a {
+        top: -63px;
+    }
+    .table.wo-table > tbody > tr > td{
+        padding-left: 10px !important;
+    }
+    .wo-dashboardbox,
+    .wo-dnavbar__title,
+    .wo-dnavbar__nav,
+    .wo-dnavbar__nav ul li a,
+    .wo-tab-content,
+    .wo-mysaved-adds .wo-savelistad,
+    .wo-stats__content,
+    .wo-feature,
+    .wo-message__wrap,
+    .wo-message__usermessages .wo-message__userlist--content,
+    .wo-message__textarea--belowsection,
+    .wo-tablewithpagination .wo-section-pagination,
+    .wo-packages-features .wo-innerbannertwo-wrap,
+    .wo-dbpost__title,
+    .wo-dbpost__content{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .opendnavbar {
+        left: 15px;
+        width: 90%;
+    }
+}
+
+@media (max-width:414px) {
+    .wo-signup-status .wo-radio {
+        width: 100%;
+        padding: 0;
+        margin: 0px 0 10px;
+    }
+    .wo-locationtag a {
+        top: -85px;
+    }
+}
+@media (max-width:411px) {
+    .wo-dform-title h4 {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .wo-dform-title span {
+        margin: 0;
+    }
+    .wo-advehiclef__check ul li {
+        width: 100%;
+    }
+    .wo-inputcontent {
+        top: 60px;
+        height: 18px;
+        background: transparent;
+    }
+    .wo-addsocial>li .wo-removelist:after {
+        background: transparent;
+    }
+    .wo-addsocial>li {
+        position: relative;
+    }
+    .wo-addsocial>li .wo-removelist {
+        line-height: 20px;
+        position: absolute;
+        top: 100%;
+        margin: 5px 0 0 0;
+        right: 0;
+    }
+    .wo-navtabs .nav-tabs .nav-link {
+        width: 100%;
+    }
+    .wo-contactsetting{
+        fieldset .wo-inputicon{padding-bottom: 25px;}
+    }
+    .wo-signup-status{padding-top: 5px;}
+    .wo-navtabs .nav-tabs .nav-link.active{
+        border-color: #eee #eee #eee;
+        border-bottom: 1px solid #eee;
+    }
+}
+@media (max-width:399px) {
+    .table.wo-table {
+        >tbody {
+            >tr {
+                ~ tr{border-top: 1px solid $border-color;}
+                &:nth-child(even){background-color: #fcfcfc;}
+                >td {
+                    &:first-child {
+                        padding-left: 0;
+                        border-left: 0;
+                    }
+                    &:last-child {
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+    .wo-tablewithpagination .wo-section-pagination{border-top: 1px solid $border-color;}  
+}
+
+@media (max-width:360px) {
+    .wo-dbpost__title h2 {
+        font-size: rem(15px);
+    }
+    .wo-message__messagearea .wo-message__userlist--content {
+        padding: 15px;
+    }
+    .wo-packages-features__header__radio {
+        margin: 0;
+    }
+    .wo-packages-features__header__radiowrapper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:380px) {
+    .wo-message__messagearea .wo-message__userlist--content {
+        flex-direction: column;
+        align-items: end;
+        padding: 15px;
+    }
+    .wo-message__userlist--img {
+        margin: 0 0 10px;
+    }
+    .wo-message__userlist--content {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .wo-message__userlist--text {
+        text-align: left;
+        padding: 0;
+        flex-direction: row;
+    }
+    .wo-message__messagearea .wo-message__userlist--text em {
+        text-align: right;
+        padding-top: 5px;
+    }
+    .wo-message__title .wo-select {
+        margin-top: 10px;
+    }
+    .wo-packages-features__rightarea {
+        margin: 15px auto 0;
+    }
+    .wo-searchhead__type .wo-select {
+        min-width: 100%;
+        width: 100%;
+    }
+    .wo-message__userlist--text h6{width: 100%;}
+}
+
+@media (max-width:320px) {
+    .wo-alert__title {
+        & h6 {
+            a {
+                display: block;
+            }
+        }
+    }
+}

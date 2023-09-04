@@ -1,0 +1,278 @@
+.wo-message {
+    .wo-bannertabs-nav {
+        li{
+            width: 189px;
+            a {
+                padding-top: 11px;
+                padding-bottom: 11px;
+                border-bottom: 0;
+                border-right: 1px solid $border-color;
+                &.active {
+                    @extend %border-top;
+                    position: relative;
+                    border-left: 0;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -1px;
+                        width: 100%;
+                        height: 1px;
+                        background-color: #fff;
+                    }
+                }
+            }
+            &:first-child {
+                .active{
+                    border-left: 1px solid $border-color;
+    
+                }
+                a {
+                    @extend %border-left;
+                    border-radius: $radius 0 0 0;
+                    border-left: 0;
+                }
+            }
+            &:last-child {
+                .active {
+                    border-right: 1px solid $border-color;
+                }
+            }
+            & + li{
+                a{
+                    border-left: 0;
+                }
+            }
+        }
+    }
+    &__wrap {
+        margin-top: -1px;
+        border-radius: 0 $radius $radius $radius;
+        background: $white-bg;
+    }
+    &__title {
+        @extend %flex;
+        align-items: center;
+        p {
+            font-size: rem(14);
+            line-height: em(24, 14);
+            margin: 0;
+        }
+        .wo-select {
+            max-width: 220px;
+            margin-left: auto;
+            .form-control {
+                height: 34px;
+            }
+        }
+    }
+    &__holder {
+        display: flex;
+        @extend %border;
+        border-radius: $radius;
+        margin-top: 20px;
+    }
+    &__userlist {
+        width: 41.94%;
+        max-height: 747px;
+        flex: none;
+        li {
+            list-style-type: none;
+            @extend %line;
+            ~li {
+                @extend %border-top;
+            }
+        }
+        &--content {
+            @extend %flex;
+            flex-wrap: nowrap;
+            padding: 29px 29px 21px;
+            &.wo-notification {
+                background-color: $list-bg;
+                &:before {
+                    content: none;
+                }
+                .wo-message__userlist--img {
+                    @extend %notification;
+                    &:before {
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        &--img {
+            flex: none;
+            img {
+                border-radius: 50%;
+            }
+        }
+        &--text {
+            @extend %flex;
+            flex-direction: column;
+            padding-left: 16px;
+            h6 {
+                @extend %flex;
+                flex-wrap: nowrap;
+                font-size: rem(15);
+                line-height: em(19, 15);
+                font-weight: 500;
+                margin: 0;
+                a {
+                    margin-left: auto;
+                    color: #999;
+                }
+            }
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                font-size: rem(14);
+                line-height: em(20, 14);
+                padding-top: 1px;
+                color: #999;
+                margin: 0;
+            }
+            em {
+                padding-top: 7px;
+                font-size: rem(13);
+                color: #999;
+            }
+        }
+    }
+    &__usermessages {
+        flex: auto;
+        @extend %border-left;
+        .wo-message__userlist--text p{display: block;}
+        .wo-message__userlist--content {
+            background-color: $lightbg;
+            padding: 18.5px 20px;
+            align-items: center;
+            @extend %border-bottom;
+        }
+        > .wo-message__userlist--content{
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                background-image: linear-gradient(to bottom,#000 0%, rgba(#000,0) 100%);
+                opacity: 0.05;
+                width: 100%;
+                height: 19px;
+            }
+        }
+        .wo-message__userlist--text {
+            em {
+                padding-top: 0;
+            }
+        }
+    }
+    &__messagearea {
+        max-height: 459px;
+        li {
+            list-style-type: none;
+            ~li {
+                @extend %border-top;
+            }
+        }
+        .wo-message__userlist--content {
+            align-items: initial;
+            padding: 29px;
+            background-color: transparent;
+            border-bottom: 0;
+        }
+        .wo-message__userlist--text {
+            em {
+                padding-top: 7px;
+            }
+        }
+        .wo-message__userlist--img {
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+            }
+        }
+    }
+    &__textarea {
+        textarea.form-control {
+            border-color: $border-color;
+            border-radius: 0;
+            border-left: 0;
+            border-right: 0;
+            height: 130px;
+        }
+        &--belowsection {
+            padding: 19px;
+            @extend %flex;
+            align-items: center;
+            ul {
+                margin: -5px;
+                @extend %flex;
+            }
+            li {
+                padding: 5px;
+                list-style-type: none;
+                a {
+                    @extend %flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    @extend %border;
+                    font-size: 18px;
+                    color: #999;
+                }
+            }
+        }
+        &--rightarea {
+            margin-left: auto;
+            flex: none;
+            .wo-btn {
+                line-height: 40px;
+                min-width: 100px;
+            }
+        }
+    }
+}
+
+.wo-notification {
+    @extend %notification;
+}
+
+.wo-message-more {
+    margin-left: auto;
+    color: #999;
+}
+
+.wo-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+    padding-top: 10px;
+    li {
+        padding: 5px;
+        border:0 !important;
+        a {
+            display: block;
+            border-radius: $radius;
+            height: 50px;
+            width: 50px;
+            img {
+                border-radius: $radius;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.wo-messageback{
+    margin-right: 10px;
+    color: #999;
+    display: none;
+}

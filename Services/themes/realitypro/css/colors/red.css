@@ -1,0 +1,119 @@
+/*Primary color #....*/
+.footer-menu a:hover,
+.footer-menu a:focus,
+.recent-project a:hover,
+.recent-project a:focus,
+.topbar-toggle-icon.open,
+a:hover,
+a:focus,
+.property-menu li.active a,
+.cssmenu > ul > li.active > a,
+.cssmenu > ul li a:hover,
+.agent-single-page .agent-details h4 a:hover,
+.categories li i,
+.header-menu span.active,
+.item-left::before,
+.item-right::before,
+.blog-qotue:after,
+.blog-post-single-item ul li a i,
+.blog-post-single-item ul li a:hover,
+.blog-post-single-item ul li a:focus,
+.property-single-slide .owl-nav div,
+.btn-primary-outline,
+.color-text{
+	color: #f25454  ;
+}
+
+/*Background Color*/
+.btn-light:hover,
+.btn-light:focus,
+.btn-alt:hover,
+.btn-alt:focus,
+.icon i,
+.shape,
+.btn-primary-outline:focus,
+.btn-primary-outline:hover,
+.map-marker .icon,
+.leaflet-div-icon,
+.property-catagorie,
+.switch label .meter::after,
+.blog-post-pagination .pagination li a:hover,
+.blog-post-pagination .pagination li a:focus,
+.blog-post-pagination .pagination li a.active,
+a.scroll-top,
+.popular-tag a:hover,
+.feature-icon,
+.panel > a:after,
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot span:hover,
+.single-feature-item:hover .feature-icon,
+.property-single-slide .owl-nav div,
+.property-slider .owl-nav div,
+.btn-primary,
+ input[type="submit"],
+ input[type="reset"],
+.color-bg{
+	background-color: #f25454  ;
+}
+
+.slider-list .owl-nav div,
+.agent-slide .owl-nav div,
+.related-post-slide .owl-nav div,
+.property-list .owl-nav div,
+.related-propertis-slider .owl-nav div,
+.property-slider .owl-nav div{
+	background-color: #f25454  !important;
+}
+
+/*Border Color*/
+.btn-alt,
+.single-agency blockquote,
+.item-left .icon::after,
+.item-right .icon::after,
+.item-left::after,
+.item-right::after,
+.single-feature-item:hover .feature-icon,
+.btn-primary-outline,
+.btn-primary-outline:focus,
+.btn-primary-outline:hover,
+.btn-primary,
+.blog-qotue,
+.client-image-holder,
+ input[type="submit"],
+ input[type="reset"]{
+	border-color: #f25454 ;
+}
+
+.pricing-table .price-body .signup:after{
+	border-color: transparent transparent transparent #f25454 ;
+}
+.map-marker .icon:after{
+	border-color: #f25454 transparent transparent;
+}
+
+/*Hover Color*/
+.social-link a:hover, 
+.social-link a:focus,
+a.scroll-top:hover,
+a.scroll-top:focus,
+.signup:hover,
+.signup:focus,
+.single-feature-item:hover .feature-icon,
+.single-feature-item:focus .feature-icon,
+.single-submition:hover .submit-icon,
+.single-submition:focus .submit-icon,
+.slider-list .owl-nav div:hover,
+.slider-list .owl-nav div:focus,
+.property-list .owl-nav div:hover,
+.related-propertis-slider .owl-nav div:hover,
+.related-propertis-slider .owl-nav div:focus,
+.property-slider .owl-nav div:focus,
+.property-slider .owl-nav div:hover,
+.btn-primary:focus,
+.btn-primary:hover{
+	background-color: #B01414;
+	border-color: #B01414;
+}
+.pricing-table .price-body .signup:hover:after{
+	border-color: transparent transparent transparent #B01414;
+}

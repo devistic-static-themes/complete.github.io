@@ -1,0 +1,82 @@
+.wo-alert {
+    border-radius: 0;
+    position: relative;
+    list-style-type: none;
+    + {
+        .wo-alert {
+            border-top: 0;
+        }
+    }
+    &__holder {
+        padding: 0;
+        &__titlearea {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & .wo-alert__titlearea__rightarea {
+                em {
+                    color: $form-color;
+                    font: 400 rem(13)/em(20, 15) $body-font-family;
+                    font-style: italic;
+                }
+            }
+            & .wo-alert__title {
+                & h6 {
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin: 0;
+                    a{
+                        color: $anchor-color;
+                    }
+                }
+                & p {
+                    color: $form-color;
+                    font: 400 rem(13)/em(22, 15) $body-font-family;
+                    margin: 0;
+                }
+            }
+        }
+        &__details {
+            margin: 0;  
+            padding: 18px 0 0 30px;
+            display: flex;
+            align-items: center;
+            border-right: 0;
+            & figure {
+                margin: 0 10px 0 0;
+                max-width: 65px;
+                width: 100%;
+                height: auto;
+                & img {
+                    width: 100%;
+                    border-radius: $radius;
+                }
+            }
+            & .wo-vehicles__title {
+                & h5 {
+                    font: 500 rem(14)/em(20, 14) $heading-font-family;
+                }
+            }
+        }
+    }
+}
+
+.new-alert {
+    background: $list-bg;
+    border-radius: 0;
+    position: relative;
+    list-style-type: none;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        width: 4px;
+        height: 4px;
+        border-radius: $radius;
+        background-color: #e74c3c;
+    }
+    .wo-alert__holder {
+        padding: 0 0 0 25px;
+    }
+}

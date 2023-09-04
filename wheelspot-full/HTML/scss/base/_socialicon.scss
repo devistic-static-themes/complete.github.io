@@ -1,0 +1,108 @@
+.wo-socialmedia{
+    @extend %flex;
+    font-size: 13px;
+    justify-content: center;
+    margin: -5px;
+    li{
+        padding: 5px;
+        list-style: none;
+        line-height: inherit;
+    }
+    a{
+        display: inline-block;
+        @extend %transition;
+    }
+}
+.wo-facebook > i,
+.wo-facebook > a {color: #3b5999}
+.wo-facebook-messenger > a,
+.wo-facebook-messenger > i {color: #0084ff}
+.wo-twitter> a,
+.wo-twitter > i {color: #55acee}
+.wo-linkedin> a,
+.wo-linkedin > i {color: #0077b5}
+.wo-skype> a,
+.wo-skype > i {color: #00aff0}
+.wo-dropbox> a,
+.wo-dropbox > i {color: #007ee5}
+.wo-vimeo> a,
+.wo-vimeo > i {color: #1ab7ea}
+.wo-tumblr > i,
+.wo-tumblr> a, {color: #34465d}
+.wo-yahoo> a,
+.wo-yahoo >i {color: #410093}
+.wo-googleplus> a,
+.wo-googleplus > i,
+.wo-google> a,
+.wo-google > i{color: #dd4b39}
+.wo-pinterestp> a,
+.wo-pinterestp > i {color: #bd081c}
+.wo-youtube> a,
+.wo-youtube > i {color: #cd201f}
+.wo-stumbleupon> a,
+.wo-stumbleupon > i {color: #eb4924}
+.wo-reddit> a,
+.wo-reddit > i {color: #ff5700}
+.wo-quora> a,
+.wo-quora > i {color: #b92b27}
+.wo-yelp> a,
+.wo-yelp > i {color: #af0606}
+.wo-soundcloud> a,
+.wo-soundcloud > i {color: #f30}
+.wo-whatsapp> a,
+.wo-whatsapp > i {color: #25d366}
+.wo-wechat> a,
+.wo-wechat > i {color: #09b83e}
+.wo-instagram> a,
+.wo-instagram > i {color: #e4405f}
+.wo-dribbble> a,
+.wo-dribbble > i {color: #ea4c89}
+.wo-flickr> a,
+.wo-flickr > i {color: #ff0084}
+.wo-rss> a,
+.wo-rss > i {color: #f60}
+.wo-behance> a,
+.wo-behance > i {color: #131418}
+.wo-foursquare> a,
+.wo-foursquare > i {color: #f94877}
+/*Theme Pagination Style */
+.wo-pagination {
+    @extend %flex;
+    font:700 rem(12px)/em(38,12) $heading-font-family;
+    ul {
+        @extend %flex;
+        text-align: center;
+        line-height: inherit;
+        li {
+            margin:0 5px;
+            line-height: inherit;
+            list-style-type:none;
+            display: inline-block;
+            vertical-align: middle;
+            a{
+                color:$form-color;
+                width: 40px;
+                display:block;
+                @extend %transition;
+                text-align:center;
+                line-height: 38px;
+                border-radius: $radius;
+                border:1px solid $border-color;
+            }
+            &.wo-prevpage {
+                margin-right: 15px; 
+                & a{width: 60px;}
+            }
+            &.wo-nextpage {
+                margin-left: 15px; 
+                & a{width: 60px;}
+            }
+            & a:hover,
+            &.wo-active a{
+                color: $theme-color;
+                border-color:$primary-color;
+                background: $primary-color;
+            }
+        }
+    }
+}

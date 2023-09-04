@@ -1,0 +1,114 @@
+.wo-particles {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.wo-innerbannertwo-wrap {
+    padding: 29px 0;
+    z-index: 1;
+    position: relative;
+    background: #c6f2f3;
+}
+
+.wo-innerbannertwo {
+    height: 100%;
+    @extend %flex;
+    flex-direction: column;
+    justify-content: center;
+    &__title {
+        padding: 5px 20px;
+        margin: 0 0 12px;
+        border-left: 2px solid $theme-color;
+        & h4 {
+            line-height: em(26, 24);
+            margin-bottom: 0;
+            span {
+                display: block;
+                font-size: 16px;
+            }
+        }
+    }
+    &__description {
+        margin: 0 0 23px;
+        p {
+            font-size: rem(16px);
+            line-height: em(26, 16);
+            margin-bottom: 18px;
+        }
+    }
+    &__btns {
+        .wo-btn {
+            line-height: 44px;
+            min-width: 160px;
+        }
+    }
+}
+
+.wo-innerbannertwo-img {
+    text-align: center;
+    margin: 29px auto -29px;
+}
+
+.wo-appreciation-wrap {
+    margin: -15px 0;
+    width: 100%;
+    @extend %flex;
+    &>div {
+        margin: 15px 0;
+    }
+    .wo-pagination {
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+
+.wo-appreciation {
+    overflow: hidden;
+    position: relative;
+    @extend %transition;
+    border-radius: $radius;
+    padding: 22px 19px 29px 29px;
+    border: 1px solid $border-color;
+    &:hover {
+        @extend %themeboxshadow;
+    }
+    & blockquote {
+        margin: 0 0 23px;
+    }
+    &__user {
+        @extend %flex;
+        align-items: center;
+        figure {
+            border-radius: 50%;
+            margin: 0 15px 0 0;
+            & img {
+                border-radius: 50%;
+            }
+        }
+        & h3 {
+            font-size: rem(18px);
+            margin-bottom: 0;
+            & span {
+                font-weight: 400;
+                display: block;
+                font-size: rem(13px);
+                color: $form-color;
+            }
+            & a {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+.wo-appreciationicon {
+    bottom: -10px;
+    right: -10px;
+    opacity: 0.05;
+    position: absolute;
+}
