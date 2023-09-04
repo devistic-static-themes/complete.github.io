@@ -1,4 +1,4 @@
-# Complete and Full websites and Ecommerce sites
+# Complete websites and Ecommerce sites
 
 ---
 ## How to Download?
